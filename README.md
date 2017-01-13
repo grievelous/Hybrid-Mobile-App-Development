@@ -6,11 +6,11 @@ I will try to make continous efforts in making the next project more detailed wi
 Week 1 and 2 uses different accesories of Ionic framework to power the view of the app.
 
 # Important command prompt commands that is required for this app to function:
-npm install ionic cordova -g
-npm install bower -g
-npm install grunt -g
+npm install ionic cordova -g <br>
+npm install bower -g <br>
+npm install grunt -g <br>
 npm install json-server
 
 # To start the application, these command lines needs to be commited:
-json-server --watch db.json
+json-server --watch db.json <br>
 ionic serve
