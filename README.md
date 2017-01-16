@@ -9,9 +9,9 @@ website called: <br>
 
 # Week 1 and 2:
 --------------
-*`different accesories of Ionic framework`
-*`Power and build up app`
-*`Modals, pop-overs, forms`
+* `different accesories of Ionic framework`
+* `Power and build up app`
+* `Modals, pop-overs, forms`
 
 # Command prompt: 
 -----------------
