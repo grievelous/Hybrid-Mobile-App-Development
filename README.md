@@ -9,12 +9,12 @@ Week 1 and 2 uses different accesories of Ionic framework to power the view of t
 
 # Command prompt: 
 -----------------
-  npm install ionic cordova -g <br>
-  npm install bower -g <br>
-  npm install grunt -g <br>
-  npm install json-server
+  `npm install ionic cordova -g` <br>
+  `npm install bower -g` <br>
+  `npm install grunt -g` <br>
+  `npm install json-server`
 
 # Start application:
 -------------------
-  json-server --watch db.json <br>
-  ionic serve
+  `json-server --watch db.json` <br>
+  `ionic serve`
