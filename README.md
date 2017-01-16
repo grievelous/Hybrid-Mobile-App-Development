@@ -3,7 +3,7 @@
 ~ <a href="https://www.coursera.org/learn/hybrid-mobile-development/home/welcome" >The Hong Kong University of Science and Technology, course 4 on the Full-stack Developer program. </a>
 ----------------------------
 <strong>This course is mainly focused on developing <br>
-and deploy a mobile app version of the restaurant <br>
+and deploying a mobile app version of the restaurant <br>
 website called: <br> 
 - conFusion!</strong>
 
@@ -12,6 +12,8 @@ website called: <br>
 * `different accesories of Ionic framework`
 * `Power and build up app`
 * `Modals, pop-overs, forms`
+* `Expand on iteractivity`
+* `Reproduce, simplify, results`
 
 # Command prompt: 
 -----------------
@@ -24,3 +26,9 @@ website called: <br>
 -------------------
   `json-server --watch db.json` <br>
   `ionic serve`
+  
+# Links:
+--------
+  <a href="http://ionicframework.com/" > Ionic framework </a> <br>
+  * `Lot's of great templates`
+  * `Easy starting projects`
