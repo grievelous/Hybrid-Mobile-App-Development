@@ -1,11 +1,17 @@
 # Hybrid-Mobile-App-Development 
 
 The Hong Kong University of Science and Technology, course 4 on the Full-stack Developer program.
+----------------------------
+This course is mainly focused on developing <br>
+and deploy a mobile app version of the restaurant <br>
+website called: <br> 
+*conFusion!
 
-
-# This course is mainly focused on developing and deploy a mobile app version of the restaurant website called: conFusion!
-
-Week 1 and 2 uses different accesories of Ionic framework to power the view of the app.
+# Week 1 and 2:
+--------------
+*`different accesories of Ionic framework`
+*`Power and build up app`
+*`Modals, pop-overs, forms`
 
 # Command prompt: 
 -----------------
