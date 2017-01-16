@@ -2,10 +2,10 @@
 --------------------
 ****<a href="https://www.coursera.org/learn/hybrid-mobile-development/home/welcome" >The Hong Kong University of Science and Technology, course 4 on the Full-stack Developer program. </a>
 ----------------------------
-This course is mainly focused on developing <br>
+<strong>This course is mainly focused on developing <br>
 and deploy a mobile app version of the restaurant <br>
 website called: <br> 
-*conFusion!
+*conFusion!</strong>
 
 # Week 1 and 2:
 --------------
