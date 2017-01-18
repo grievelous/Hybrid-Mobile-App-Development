@@ -19,7 +19,7 @@ website called: <br>
 ---------------
 * `Simplifying Controller code with Resolve`
 * `Local storage`
-* `Android/IOS SDK and platforms + deployment of App`
+* `Android/iOS SDK and platforms + deployment of App`
 
 # Command prompt: 
 -----------------
@@ -38,3 +38,10 @@ website called: <br>
   <a href="http://ionicframework.com/" > Ionic framework </a> <br>
   * `Lot's of great templates`
   * `Easy starting projects`
+  <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html" > Android Platform Guide </a> <br>
+  * `Step-by-step guide to install deployment tools`
+  * `Android emulator`
+  <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html" > iOS Platform Guide </a> <br>
+  * `Step-by-step guide to install deployment tools`
+  * `Xcode`
+  * `iOS emulator`
