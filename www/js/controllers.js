@@ -154,7 +154,7 @@ angular.module('conFusion.controllers', [])
     };
 }])
 
-.controller('DishDetailController', ['$scope', '$stateParams', '$ionicPopover', '$ionicModal', 'menuFactory', 'favoriteFactory', 'baseURL', function($scope, $stateParams, $ionicPopover, $ionicModal, menuFactory, favoriteFactory, baseURL) {
+.controller('DishDetailController', ['$scope', '$stateParams', 'dish', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicPopover', '$ionicModal', function ($scope, $stateParams, dish, menuFactory, favoriteFactory, baseURL, $ionicPopover, $ionicModal) {
 
     $scope.baseURL = baseURL;
     $scope.dish = {};
@@ -173,16 +173,7 @@ angular.module('conFusion.controllers', [])
       $scope.commentModal = popover;
     });
 
-    $scope.dish = menuFactory.get({id:parseInt($stateParams.id,10)})
-    .$promise.then(
-                    function(response){
-                        $scope.dish = response;
-                        $scope.showDish = true;
-                    },
-                    function(response) {
-                        $scope.message = "Error: "+response.status + " " + response.statusText;
-                    }
-    );
+    $scope.dish = dish;
 
     $scope.addFavorite = function (index) {
       console.log("index is " + index);
