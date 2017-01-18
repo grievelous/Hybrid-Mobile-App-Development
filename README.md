@@ -15,6 +15,12 @@ website called: <br>
 * `Expand on iteractivity`
 * `Reproduce, simplify, results`
 
+# Week 3 and 4:
+---------------
+* `Simplifying Controller code with Resolve`
+* `Local storage`
+* `Android/IOS SDK and platforms + deployment of App`
+
 # Command prompt: 
 -----------------
   `npm install ionic cordova -g` <br>
