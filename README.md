@@ -37,10 +37,10 @@ website called: <br>
 --------
   <a href="http://ionicframework.com/" > Ionic framework </a> <br>
   * `Lot's of great templates`
-  * `Easy starting projects`
+  * `Easy starting projects` <br>
   <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html" > Android Platform Guide </a> <br>
   * `Step-by-step guide to install deployment tools`
-  * `Android emulator`
+  * `Android emulator` <br>
   <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html" > iOS Platform Guide </a> <br>
   * `Step-by-step guide to install deployment tools`
   * `Xcode`
