@@ -35,15 +35,19 @@ website called: <br>
   
 # Links:
 
-<a href="http://ionicframework.com/" > Ionic framework </a> <br>
+[Ionic framework](http://ionicframework.com/)  <br>
    * `Lot's of great templates`
    * `Easy starting projects`  <br>
 
-<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html" > Android Platform Guide </a> <br>
-   * `Step-by-step guide to install deployment tools`
-   * `Android emulator` <br> 
+[Android Platform Guide](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html) <br>
+   * Step-by-step guide to install deployment tools
+   * Android emulator <br> 
   
-<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html" > iOS Platform Guide </a> <br>
-   * `Step-by-step guide to install deployment tools`
-   * `Xcode`
-   * `iOS emulator`
+[iOS Platform Guide](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)  <br>
+   ```
+   * Step-by-step guide to install deployment tools
+   ```
+   * Xcode
+   ```
+   * iOS emulator
+   ```
