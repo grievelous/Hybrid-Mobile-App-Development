@@ -44,10 +44,7 @@ website called: <br>
    * Android emulator <br> 
   
 [iOS Platform Guide](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)  <br>
-   ```
-   * Step-by-step guide to install deployment tools
-   ```
-   * Xcode
-   ```
-   * iOS emulator
-   ```
+   * `Step-by-step guide to install deployment tools`
+   * `Xcode`
+   * `iOS emulator`
+   
