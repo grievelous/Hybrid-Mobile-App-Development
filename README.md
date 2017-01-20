@@ -9,17 +9,17 @@ website called: <br>
 
 # Week 1 and 2:
 --------------
-* `different accesories of Ionic framework`
-* `Power and build up app`
-* `Modals, pop-overs, forms`
-* `Expand on iteractivity`
-* `Reproduce, simplify, results`
+   * `different accesories of Ionic framework`
+   * `Power and build up app`
+   * `Modals, pop-overs, forms`
+   * `Expand on iteractivity`
+   * `Reproduce, simplify, results`
 
 # Week 3 and 4:
 ---------------
-* `Simplifying Controller code with Resolve`
-* `Local storage`
-* `Android/iOS SDK and platforms + deployment of App`
+   * `Simplifying Controller code with Resolve`
+   * `Local storage`
+   * `Android/iOS SDK and platforms + deployment of App`
 
 # Command prompt: 
 -----------------
@@ -35,15 +35,14 @@ website called: <br>
   
 # Links:
 --------
-  <a href="http://ionicframework.com/" > Ionic framework </a> <br>
-  * `Lot's of great templates`
-  * `Easy starting projects`  <br>
+<a href="http://ionicframework.com/" > Ionic framework </a> <br>
+   * `Lot's of great templates`
+   * `Easy starting projects`  <br>
+<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html" > Android Platform Guide </a> <br>
+   * `Step-by-step guide to install deployment tools`
+   * `Android emulator` <br> 
   
-  <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html" > Android Platform Guide </a> <br>
-  * `Step-by-step guide to install deployment tools`
-  * `Android emulator` <br> 
-  
-  <a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html" > iOS Platform Guide </a> <br>
-  * `Step-by-step guide to install deployment tools`
-  * `Xcode`
-  * `iOS emulator`
+<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html" > iOS Platform Guide </a> <br>
+   * `Step-by-step guide to install deployment tools`
+   * `Xcode`
+   * `iOS emulator`
