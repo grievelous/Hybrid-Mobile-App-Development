@@ -5,7 +5,7 @@
 <strong>This course is mainly focused on developing <br>
 and deploying a mobile app version of the restaurant <br>
 website called: <br> 
-<hr>conFusion!<hr></strong>
+<u>conFusion!</u></strong>
 
 # Week 1 and 2:
 
