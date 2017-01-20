@@ -7,7 +7,7 @@ and deploying a mobile app version of the restaurant <br>
 website called: <br> 
 <u>conFusion!</u></strong>
 
-# Week 1 and 2:
+## Week 1 and 2:
 
    * `different accesories of Ionic framework`
    * `Power and build up app`
@@ -15,25 +15,25 @@ website called: <br>
    * `Expand on iteractivity`
    * `Reproduce, simplify, results`
 
-# Week 3 and 4:
+## Week 3 and 4:
 
    * `Simplifying Controller code with Resolve`
    * `Local storage`
    * `Android/iOS SDK and platforms + deployment of App`
 
-# Command prompt: 
+### Command prompt: 
 
   `npm install ionic cordova -g` <br>
   `npm install bower -g` <br>
   `npm install grunt -g` <br>
   `npm install json-server`
 
-# Start application:
+### Start application:
 
   `json-server --watch db.json` <br>
   `ionic serve`
   
-# Links:
+### Links:
 
 [Ionic framework](http://ionicframework.com/)  <br>
    * `Lot's of great templates`
