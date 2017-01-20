@@ -1,6 +1,6 @@
 # Hybrid-Mobile-App-Development 
 
-<a href="https://www.coursera.org/learn/hybrid-mobile-development/home/welcome" >The Hong Kong University of Science and Technology, course 4 on the Full-stack Developer program. </a>
+ [The Hong Kong University of Science and Technology, course 4 on the Full-stack Developer program.](https://www.coursera.org/learn/hybrid-mobile-development/home/welcome)
 ----------------------------
 <strong>This course is mainly focused on developing <br>
 and deploying a mobile app version of the restaurant <br>
