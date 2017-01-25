@@ -31,7 +31,7 @@ angular.module('conFusion.services', ['ngResource'])
 
         }])
 
-        .factory('favoriteFactory', ['$resource', 'baseURL', 'localStorage', function ($resource, baseURL, localStorage) {
+        .factory('favoriteFactory', ['$resource', 'baseURL', '$localStorage', function ($resource, baseURL, $localStorage) {
           var favFac = {};
           var favorites = $localStorage.getObject('favorites', '[]');
 
