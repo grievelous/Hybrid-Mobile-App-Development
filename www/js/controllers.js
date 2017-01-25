@@ -71,12 +71,13 @@ angular.module('conFusion.controllers', [])
     }, 1000);
   };
 })
-
-.controller('MenuController', ['$scope', 'dishes', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicListDelegate', function($scope, dishes, menuFactory, favoriteFactory, baseURL, $ionicListDelegate) {
+// Injection to the controller and simplified code.
+.controller('MenuController', ['$scope', 'dishes', 'favoriteFactory', 'baseURL', '$ionicListDelegate', function($scope, dishes, favoriteFactory, baseURL, $ionicListDelegate) {
 
     $scope.baseURL = baseURL;
     $scope.tab = 1;
     $scope.filtText = '';
+
     $scope.dishes = dishes;
 
 
@@ -101,9 +102,7 @@ angular.module('conFusion.controllers', [])
         return ($scope.tab === checkTab);
     };
 
-    $scope.toggleDetails = function() {
-        $scope.showDetails = !$scope.showDetails;
-    };
+
 
     $scope.addFavorite = function (index) {
         console.log("index is " + index);
@@ -144,7 +143,7 @@ angular.module('conFusion.controllers', [])
     };
 }])
 
-.controller('DishDetailController', ['$scope', '$stateParams', 'dish', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicPopover', '$ionicModal', function ($scope, $stateParams, dish, menuFactory, favoriteFactory, baseURL, $ionicPopover, $ionicModal) {
+.controller('DishDetailController', ['$scope', '$stateParams', 'dish', '$ionicPopover', '$ionicModal', 'menuFactory', 'favoriteFactory', 'baseURL',  function ($scope, $stateParams, dish, $ionicPopover, $ionicModal, menuFactory, favoriteFactory, baseURL) {
 
     $scope.baseURL = baseURL;
     $scope.dish = {};
@@ -155,12 +154,14 @@ angular.module('conFusion.controllers', [])
       scope: $scope
     }).then(function(popover) {
       $scope.dishDetailPopover = popover;
+
     });
 
     $ionicModal.fromTemplateUrl('templates/dish-comment.html', {
       scope: $scope
     }).then(function(popover) {
       $scope.commentModal = popover;
+
     });
 
     $scope.dish = dish;
@@ -171,13 +172,16 @@ angular.module('conFusion.controllers', [])
       $scope.dishDetailPopover.hide();
     };
 
+
     $scope.openCommentModal = function() {
-      $scope.commentModal.show();
-      $scope.dishDetailPopover.hide();
-    };
+    $scope.commentModal.show();
+    $scope.dishDetailPopover.hide();
+
+};
 
     $scope.closeCommentModal = function() {
       $scope.commentModal.hide();
+
     };
 
     $scope.newComment = {rating:5, comment:"", author:"", date:""};
@@ -188,6 +192,7 @@ angular.module('conFusion.controllers', [])
       menuFactory.getDishes().update({id:$scope.dish.id}, $scope.dish);
       $scope.commentModal.hide();
       $scope.newComment = {rating:5, comment:"", author:"", date:""};
+
     };
 
 }])
@@ -210,9 +215,9 @@ angular.module('conFusion.controllers', [])
     };
 }])
 
-// implement the IndexController and About Controller here
+// Injection to the controller, and simplified code.
 
-.controller('IndexController', ['$scope', 'leader', 'dish', 'promotion', 'menuFactory', 'promotionFactory', 'corporateFactory', 'baseURL', function ($scope, leader, dish, promotion, menuFactory, promotionFactory, corporateFactory, baseURL) {
+.controller('IndexController', ['$scope', 'dish', 'promotion', 'leader', 'baseURL', function ($scope, dish, promotion, leader, baseURL) {
 
       $scope.baseURL = baseURL;
       $scope.leader = leader;
@@ -220,13 +225,14 @@ angular.module('conFusion.controllers', [])
       $scope.promotion = promotion;
 }])
 
-.controller('AboutController', ['$scope', 'leaders', 'corporateFactory', 'baseURL', function($scope, leader, corporateFactory, baseURL) {
+// Injection to the controller, and simplified code.
+.controller('AboutController', ['$scope', 'leaders', 'baseURL', function($scope, leaders, baseURL) {
 
             $scope.baseURL = baseURL;
             $scope.leaders = leaders
             console.log($scope.leaders);
 
-}])
+            }])
 
 .controller('FavoritesController', ['$scope', 'dishes', 'favorites', 'favoriteFactory', 'baseURL', '$ionicListDelegate', '$ionicPopup', '$ionicLoading', '$timeout', function ($scope, dishes, favorites, favoriteFactory, baseURL, $ionicListDelegate, $ionicPopup, $ionicLoading, $timeout) {
 
