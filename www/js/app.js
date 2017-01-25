@@ -58,7 +58,7 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers', 'conFusion.servic
    views: {
      'mainContent': {
        templateUrl: 'templates/home.html',
-       controller: 'IndexController',
+       controller: 'IndexController', // This is where the resolve state is implemented
        resolve: {
          leader: ['corporateFactory', function(corporateFactory){
            return corporateFactory.get({id:3});
@@ -69,7 +69,7 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers', 'conFusion.servic
          promotion: ['promotionFactory', function(promotionFactory) {
            return promotionFactory.get({id:0});
          }]
-      }
+      } // This is where resolve state ends.
      }
    }
  })
@@ -79,12 +79,12 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers', 'conFusion.servic
      views: {
        'mainContent': {
          templateUrl: 'templates/aboutus.html',
-         controller: 'AboutController',
+         controller: 'AboutController', // This is where the resolve state is implemented
          resolve: {
            leaders: ['corporateFactory', function(corporateFactory) {
             return corporateFactory.query();
            }]
-         }
+         } // This is where resolve state ends.
        }
      }
    })
@@ -121,12 +121,12 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers', 'conFusion.servic
      views: {
        'mainContent': {
          templateUrl: 'templates/menu.html',
-         controller: 'MenuController',
+         controller: 'MenuController', // This is where resolve state is implemented.
          resolve: {
            dishes: ['menuFactory', function(menuFactory) {
              return menuFactory.query();
            }]
-         }
+         } // This is where resolve state ends.
        }
      }
    })
