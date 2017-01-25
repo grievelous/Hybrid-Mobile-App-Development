@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conFusion.services', ['ngResource'])
-        .constant("baseURL","http://localhost:3000/")
+        .constant("baseURL","http://192.168.141.201:3000/")
         .factory('menuFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
 
             return $resource(baseURL + "dishes/:id", null, {
@@ -12,7 +12,7 @@ angular.module('conFusion.services', ['ngResource'])
 
 }])
 
-.factory('promotionFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
+        .factory('promotionFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
             return $resource(baseURL + "promotions/:id");
 
 }])
@@ -31,9 +31,9 @@ angular.module('conFusion.services', ['ngResource'])
 
         }])
 
-        .factory('favoriteFactory', ['$resource', 'baseURL', '$localStorage', function ($resource, baseURL, $localStorage) {
+        .factory('favoriteFactory', ['$resource', 'baseURL', '$localStorage', function ($resource, baseURL, $localStorage) {  //Injected $localStorage to the favoriteFactory
           var favFac = {};
-          var favorites = $localStorage.getObject('favorites', '[]');
+          var favorites = $localStorage.getObject('favorites', '[]'); // .getObject used on $localStorage
 
         favFac.addToFavorites = function (index) {
           for (var i = 0; i < favorites.length; i++) {
@@ -41,7 +41,7 @@ angular.module('conFusion.services', ['ngResource'])
                   return;
           }
         favorites.push({id: index});
-        $localStorage.storeObject('favorites', favorites);
+        $localStorage.storeObject('favorites', favorites); // This is where added favorite is stored to localStorage.
     };
 
     favFac.deleteFromFavorites = function (index) {
@@ -50,30 +50,30 @@ angular.module('conFusion.services', ['ngResource'])
             favorites.splice(i, 1);
         }
     }
-    $localStorage.storeObject('favorites', favorites);
+    $localStorage.storeObject('favorites', favorites); // Also added deletion to persist through shutdown of the server.
 };
 
-                favFac.getFavorites = function () {
+    favFac.getFavorites = function () {
 
-                        return favorites;
+        return favorites;
       };
-                
-                        return favFac;
+
+        return favFac;
     }])
 
-        .factory('$localStorage', ['$window', function($window) {
-                return {
-                store: function(key, value) {
-                        $window.localStorage[key] = value;
+    .factory('$localStorage', ['$window', function($window) {
+  return {
+    store: function(key, value) {
+      $window.localStorage[key] = value;
     },
-                get: function(key, defaultValue) {
-                        return $window.localStorage[key] || defaultValue;
+    get: function(key, defaultValue) {
+      return $window.localStorage[key] || defaultValue;
     },
-                storeObject: function(key, value) {
-                        $window.localStorage[key] = JSON.stringify(value);
+    storeObject: function(key, value) {
+      $window.localStorage[key] = JSON.stringify(value);
     },
-                getObject: function(key,defaultValue) {
-                        return JSON.parse($window.localStorage[key] || defaultValue);
+    getObject: function(key,defaultValue) {
+      return JSON.parse($window.localStorage[key] || defaultValue);
     }
   }
 }])
