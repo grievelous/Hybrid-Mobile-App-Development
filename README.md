@@ -20,6 +20,9 @@ website called: <br>
    * `Simplifying Controller code with Resolve`
    * `Local storage`
    * `Android/iOS SDK and platforms + deployment of App`
+   * `Splash screen for app`
+   * `Notifyin the user`
+   * `Camera-plugin`
 
 ### Command prompt: 
 
