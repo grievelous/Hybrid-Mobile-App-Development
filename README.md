@@ -41,7 +41,9 @@ website called: <br>
   <strong>I seem to have alot of trouble to get the android emulator<br> to launch the application for reasons I couldn't understand in time to   fix them and also be on time with the course.<br>
   The Ionic app framework seems to also freeze with the comment modal, that is a known bug and the workaround to fix it<br>
   didn't work for me, sadly. I hope it works for you!<br></strong>
-  [Here is a link for the freeze fix]( https://stackoverflow.com/questions/40491717/ionic-app-freezes-or-stops-working-after-popover-and-modal-closes/40561429#40561429)
+  [Here is a link for the freeze fix]( https://stackoverflow.com/questions/40491717/ionic-app-freezes-or-stops-working-after-popover-and-modal-closes/40561429#40561429)<br>
+  I got the certificate for this course and this is the final version of this course.<br>
+  There will be no more updates in code on this project.
   
 ### Links:
 
